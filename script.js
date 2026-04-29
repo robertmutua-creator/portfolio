@@ -4,7 +4,8 @@ toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark')
   toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙'
 })
-
+// auto footer
+document.getElementById("year").textContent = new Date().getFullYear();
 // Scroll animation for sections
 const sections = document.querySelectorAll('.fade-in')
 const observer = new IntersectionObserver(
